@@ -1,68 +1,51 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* general styles */
+@layer base {
+  body {
+    @apply font-secondary text-lg text-dark bg-[#E5E5E5];
   }
-  a:hover {
-    color: #747bff;
+
+  .section {
+    @apply py-[40px] lg:py-[160px];
   }
-  button {
-    background-color: #f9f9f9;
+
+  .link {
+    @apply uppercase font-primary tracking-[0.08em];
+  }
+
+  .h1 {
+    @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none font-tertiary mb-4;
+  }
+
+  .h2 {
+    @apply text-[40px] xl:text-[85px] text-dark uppercase font-primary max-w-[236px] leading-none mb-[38px];
+  }
+
+  /* buttons */
+  .btn {
+    @apply font-primary text-lg tracking-[0.08em] uppercase px-[40px] transition-all duration-300 flex items-center gap-x-[10px];
+  }
+
+  .btn-sm {
+    @apply h-[55px];
+  }
+
+  .btn-lg {
+    @apply h-[67px];
+  }
+
+  .btn-outline {
+    @apply border border-white/70 bg-none hover:bg-white hover:text-dark;
+  }
+
+  .btn-dark {
+    @apply text-white transition-all bg-dark hover:bg-dark/90;
+  }
+
+  .btn-link {
+    @apply h-auto px-0 transition-all text-dark hover:text-dark/90;
   }
 }
