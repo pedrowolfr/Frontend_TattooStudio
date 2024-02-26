@@ -1,57 +1,53 @@
-import { useEffect, useState } from 'react'
-import { useInView } from 'react-intersection-observer'
-// circulo de progreso
-import { CircularProgressbar } from 'react-circular-progressbar'
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { CircularProgressbar } from "react-circular-progressbar";
 
 export default function Skills() {
-  // destructure useInView
   const { ref, inView } = useInView({
     threshold: 0.2,
-  })
+  });
 
-  // estados
-  const [fullBody, setFullBody] = useState(0)
-  const [piercing, setPiercing] = useState(0)
-  const [fullColor, setFullColor] = useState(0)
-  const [temp, setTemp] = useState(0)
+  const [fullBody, setFullBody] = useState(0);
+  const [piercing, setPiercing] = useState(0);
+  const [fullColor, setFullColor] = useState(0);
+  const [temp, setTemp] = useState(0);
 
   useEffect(() => {
     if (inView) {
       setTimeout(() => {
         if (fullBody < 90) {
-          setFullBody(fullBody + 1)
+          setFullBody(fullBody + 1);
         }
         if (piercing < 80) {
-          setPiercing(piercing + 1)
+          setPiercing(piercing + 1);
         }
         if (fullColor < 75) {
-          setFullColor(fullColor + 1)
+          setFullColor(fullColor + 1);
         }
         if (temp < 95) {
-          setTemp(temp + 1)
+          setTemp(temp + 1);
         }
-      }, 50)
+      }, 50);
     } else {
-      setFullBody(0)
-      setPiercing(0)
-      setFullColor(0)
-      setTemp(0)
+      setFullBody(0);
+      setPiercing(0);
+      setFullColor(0);
+      setTemp(0);
     }
-  }, [inView, fullBody, piercing, fullColor, temp])
+  }, [inView, fullBody, piercing, fullColor, temp]);
 
-  // estilos circulos
   const styles = {
     path: {
-      stroke: '#111111',
+      stroke: "#111111",
     },
     trail: {
-      stroke: '#eeeeee',
+      stroke: "#eeeeee",
     },
     text: {
-      fill: '#111111',
-      fontSize: '24px',
+      fill: "#111111",
+      fontSize: "24px",
     },
-  }
+  };
 
   return (
     <section id="special" ref={ref} className="section font-primary">
@@ -100,5 +96,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

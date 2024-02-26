@@ -1,10 +1,6 @@
-// nav data
-
-// componentes
-import Socials from './Socials'
+import Socials from "./Socials";
 
 export default function NavMobile() {
-
   return (
     <nav className="flex flex-col w-full h-full overflow-hidden justify-evenly">
       <ul className="flex flex-col items-center justify-center py-6 mb-8 gap-y-6">
@@ -43,5 +39,5 @@ export default function NavMobile() {
         <Socials />
       </div>
     </nav>
-  )
+  );
 }

@@ -1,18 +1,18 @@
-import { testimonialData } from '../data'
-import { motion } from 'framer-motion'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination } from 'swiper'
-import 'swiper/swiper.min.css' // Importe o estilo principal de Swiper
-import '../testimonialSlider.css'
-import { fadeIn } from '../variants'
+import { testimonialData } from "../data";
+import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/swiper.min.css";
+import "../testimonialSlider.css";
+import { fadeIn } from "../variants";
 
 export default function Testimonial() {
   return (
     <motion.section
       className="py-[40px] lg:pb-[160px] lg:pt-0"
-      variants={fadeIn('up')}
+      variants={fadeIn("up")}
       initial="hidden"
-      whileInView={'show'}
+      whileInView={"show"}
       viewport={{ once: false, amount: 0.2 }}
       id="testimonial"
     >
@@ -24,7 +24,7 @@ export default function Testimonial() {
           className="mySwiper"
         >
           {testimonialData.map((slide, index) => {
-            const { quoteImg, message, name, occupation } = slide
+            const { quoteImg, message, name, occupation } = slide;
 
             return (
               <SwiperSlide key={index}>
@@ -44,10 +44,10 @@ export default function Testimonial() {
                   </div>
                 </div>
               </SwiperSlide>
-            )
+            );
           })}
         </Swiper>
       </div>
     </motion.section>
-  )
+  );
 }

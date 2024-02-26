@@ -1,11 +1,7 @@
-// hero data
 import { heroData } from "../data";
-// framer motion
 import { motion } from "framer-motion";
-// framer motion transition
 import { fadeIn } from "../variants";
 
-// transition
 const container = {
   hidden: {},
   show: {
@@ -17,13 +13,12 @@ const container = {
 };
 
 export default function Hero() {
-  // destructure hero data
   const { title, subtitle } = heroData;
 
   return (
     <section
       id="home"
-      className="bg-center bg-cover bg-hero min-h-[40vh] lg:h-[948px] bg-no-repeat relative mt-[120px] lg:mt-[150px]"
+      className="bg-center bg-cover bg-hero min-h-[40vh] lg:h-[648px] bg-no-repeat relative mt-[120px] lg:mt-[150px]"
     >
       <motion.div
         variants={container}
@@ -42,7 +37,6 @@ export default function Hero() {
           >
             {subtitle}
           </motion.p>
-          {/* btn */}
         </div>
       </motion.div>
     </section>

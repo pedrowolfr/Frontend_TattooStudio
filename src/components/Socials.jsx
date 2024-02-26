@@ -1,6 +1,5 @@
-// social data
-import { FaInstagram, FaTwitter } from 'react-icons/fa'
-import { GrFacebookOption } from 'react-icons/gr'
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { GrFacebookOption } from "react-icons/gr";
 
 export default function Socials() {
   return (
@@ -21,5 +20,5 @@ export default function Socials() {
         </a>
       </li>
     </ul>
-  )
+  );
 }
