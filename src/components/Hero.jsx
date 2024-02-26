@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-center bg-cover bg-hero min-h-[40vh] lg:h-[648px] bg-no-repeat relative mt-[120px] lg:mt-[150px]"
+      className="bg-center bg-cover bg-hero min-h-[40vh] lg:h-[848px] bg-no-repeat relative mt-[120px] lg:mt-[150px]"
     >
       <motion.div
         variants={container}
