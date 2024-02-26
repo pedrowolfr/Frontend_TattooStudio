@@ -1,48 +1,46 @@
-import { useState } from 'react'
-import emailjs from '@emailjs/browser'
-import { toast } from 'react-toastify'
-import { contactData } from '../data'
-// framer motion
-import { motion } from 'framer-motion'
-// animation
-import { fadeIn } from '../variants'
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { contactData } from "../data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 export default function Contact() {
-  const { title, info, form } = contactData
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const { title, info, form } = contactData;
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    if (name === '' || email === '' || message === '') {
-      toast.warning('Complete los campos')
-      return
+    if (name === "" || email === "" || message === "") {
+      toast.warning("Complete los campos");
+      return;
     }
 
     emailjs
       .sendForm(
-        'service_e7d7usw',
-        'template_xvbgsin',
+        "service_e7d7usw",
+        "template_xvbgsin",
         e.target,
 
-        'avv6uQ0puupw5tSE4',
+        "avv6uQ0puupw5tSE4"
       )
       .then(
         (response) => {
-          console.log('Email Enviado', response.status, response.text)
-          setEmail('')
-          setMessage('')
-          setName('')
-          toast.success('Email enviado')
+          console.log("Email Enviado", response.status, response.text);
+          setEmail("");
+          setMessage("");
+          setName("");
+          toast.success("Email enviado");
         },
         (err) => {
-          console.log('Erro: ', err)
-          toast.error('Email no enviado.')
-        },
-      )
-  }
+          console.log("Erro: ", err);
+          toast.error("Email no enviado.");
+        }
+      );
+  };
 
   return (
     <section id="contact" className="section">
@@ -50,9 +48,9 @@ export default function Contact() {
         <div className="flex flex-col xl:flex-row gap-y-16">
           {/* texto */}
           <motion.div
-            variants={fadeIn('right')}
+            variants={fadeIn("right")}
             initial="hidden"
-            whileInView={'show'}
+            whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
             className="flex-1"
           >
@@ -61,8 +59,7 @@ export default function Contact() {
             {/* informacion */}
             <div className="flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0">
               {info.map((item, i) => {
-                const { title, subtitle, address, phone, email, link, cel } =
-                  item
+                const { title, subtitle, address, phone, email, cel } = item;
 
                 return (
                   <div key={i}>
@@ -93,23 +90,16 @@ export default function Contact() {
                         <div className="font-medium">{email.address}</div>
                       </div>
                     </div>
-                    {/* get location link */}
-                    <a
-                      className="font-medium border-b border-dark pb-[5px]"
-                      href="#"
-                    >
-                      {link}
-                    </a>
                   </div>
-                )
+                );
               })}
             </div>
           </motion.div>
           {/* form */}
           <motion.div
-            variants={fadeIn('left')}
+            variants={fadeIn("left")}
             initial="hidden"
-            whileInView={'show'}
+            whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
             className="flex-1 xl:pl-[40px] flex justify-center items-center"
           >
@@ -126,9 +116,9 @@ export default function Contact() {
                 placeholder={form.name}
                 className="border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4"
                 style={{
-                  borderColor: 'black',
-                  borderStyle: 'solid',
-                  borderWidth: '0 0 1px 0',
+                  borderColor: "black",
+                  borderStyle: "solid",
+                  borderWidth: "0 0 1px 0",
                 }}
               />
               <input
@@ -139,9 +129,9 @@ export default function Contact() {
                 placeholder={form.email}
                 className="border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4"
                 style={{
-                  borderColor: 'black',
-                  borderStyle: 'solid',
-                  borderWidth: '0 0 1px 0',
+                  borderColor: "black",
+                  borderStyle: "solid",
+                  borderWidth: "0 0 1px 0",
                 }}
               />
               <input
@@ -152,9 +142,9 @@ export default function Contact() {
                 placeholder={form.message}
                 className="border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4"
                 style={{
-                  borderColor: 'black',
-                  borderStyle: 'solid',
-                  borderWidth: '0 0 1px 0',
+                  borderColor: "black",
+                  borderStyle: "solid",
+                  borderWidth: "0 0 1px 0",
                 }}
               />
               {/* send button */}
@@ -166,5 +156,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

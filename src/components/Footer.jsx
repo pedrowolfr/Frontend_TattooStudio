@@ -1,22 +1,18 @@
-import React from 'react'
-// footer data
-import { footerData } from '../data'
-// framer motion
-import { motion } from 'framer-motion'
-// animation
-import { fadeIn } from '../variants'
+import React from "react";
+import { footerData } from "../data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Footer = () => {
-  // destructure footer data
-  const { about } = footerData
+  const { about } = footerData;
 
   return (
     <footer className="section bg-dark">
       <div className="container mx-auto">
         <motion.div
-          variants={fadeIn('up')}
+          variants={fadeIn("up")}
           initial="hidden"
-          whileInView={'show'}
+          whileInView={"show"}
           viewport={{ once: false, amount: 0.1 }}
           className="flex flex-col text-white lg:flex-row lg:justify-between gap-x-5 gap-y-14"
         >
@@ -50,7 +46,7 @@ const Footer = () => {
         </motion.div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

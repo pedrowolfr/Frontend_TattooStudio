@@ -40,25 +40,25 @@ export const galleryData = {
       src: GalleryImg1,
       original: GalleryImg1,
       width: 465,
-      height: 412,
+      height: 460,
     },
     {
       src: GalleryImg2,
       original: GalleryImg2,
       width: 465,
-      height: 540,
+      height: 610,
     },
     {
       src: GalleryImg3,
       original: GalleryImg3,
       width: 465,
-      height: 412,
+      height: 460,
     },
     {
       src: GalleryImg4,
       original: GalleryImg4,
       width: 465,
-      height: 540,
+      height: 600,
     },
     {
       src: GalleryImg5,
@@ -69,8 +69,8 @@ export const galleryData = {
     {
       src: GalleryImg6,
       original: GalleryImg6,
-      width: 464,
-      height: 412,
+      width: 465,
+      height: 520,
     },
     {
       src: GalleryImg7,
@@ -82,7 +82,7 @@ export const galleryData = {
       src: GalleryImg8,
       original: GalleryImg8,
       width: 465,
-      height: 412,
+      height: 512,
     },
   ],
 };

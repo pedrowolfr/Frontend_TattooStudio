@@ -1,10 +1,9 @@
-// about data
 import { aboutData } from '../data'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 export default function About() {
-  // destructure about data
+
   const { title, subtitle1, subtitle2 } = aboutData
 
   return (
@@ -22,8 +21,8 @@ export default function About() {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.6 }}
           >
-            <div className="text-[360px] xl:text-[720px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent">
-              16
+            <div className=" xl:text-[620px] leading-none  bg-about bg-no-repeat bg-right  text-transparent">
+              27
             </div>
           </motion.div>
           {/* text */}
