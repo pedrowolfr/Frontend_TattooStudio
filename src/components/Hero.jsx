@@ -1,9 +1,9 @@
 // hero data
-import { heroData } from '../data'
+import { heroData } from "../data";
 // framer motion
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 // framer motion transition
-import { fadeIn } from '../variants'
+import { fadeIn } from "../variants";
 
 // transition
 const container = {
@@ -14,11 +14,11 @@ const container = {
       delayChildren: 0.6,
     },
   },
-}
+};
 
 export default function Hero() {
   // destructure hero data
-  const { title, subtitle } = heroData
+  const { title, subtitle } = heroData;
 
   return (
     <section
@@ -28,16 +28,16 @@ export default function Hero() {
       <motion.div
         variants={container}
         initial="hidden"
-        whileInView={'show'}
+        whileInView={"show"}
         className="container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center xl:justify-end"
       >
         {/* content */}
         <div className="text-center text-white lg:text-left lg:max-w-[640px]">
-          <motion.h1 variants={fadeIn('down')} className="h1">
+          <motion.h1 variants={fadeIn("down")} className="h1">
             {title}
           </motion.h1>
           <motion.p
-            variants={fadeIn('down')}
+            variants={fadeIn("down")}
             className="max-w-lg mb-8 leading-relaxed lg:mb-16"
           >
             {subtitle}
@@ -46,5 +46,5 @@ export default function Hero() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
