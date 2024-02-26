@@ -61,7 +61,7 @@ export default function Skills() {
               styles={styles}
               text={`${fullBody}%`}
             />
-            <div className="font-light text-center uppercase">Tatuajes</div>
+            <div className="font-light text-center uppercase">Blackwork</div>
           </div>
           {/* progressbar 2 */}
           <div className="w-[150px] lg:w-[275px] flex flex-col items-center gap-y-6">

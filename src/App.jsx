@@ -5,7 +5,7 @@ import About from './components/About'
 import GallerySection from './components/GallerySection'
 import Artist from './components/Artist'
 import Skills from './components/Skills'
-import Testimonial from './components/Testimonial'
+//import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -19,7 +19,7 @@ export function App() {
         <GallerySection />
         <Artist />
         <Skills />
-        <Testimonial />
+        
         <Contact />
         <Footer />
       </div>
