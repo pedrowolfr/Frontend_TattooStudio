@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Artist = () => {
-  return (
+  return (<section id="artist">
     <motion.div
       className="py-20 bg-gray-50"
       variants={fadeIn("right")}
@@ -67,6 +67,7 @@ const Artist = () => {
         </div>
       </div>
     </motion.div>
+    </section>
   );
 };
 

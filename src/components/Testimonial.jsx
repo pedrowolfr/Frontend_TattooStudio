@@ -14,7 +14,6 @@ export default function Testimonial() {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.2 }}
-      id="testimonial"
     >
       <div className="container mx-auto">
         <Swiper

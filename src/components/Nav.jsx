@@ -29,7 +29,7 @@ export default function Nav() {
         <li>
           <a
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#testimonial"
+            href="#artist"
           >
             Artistas
           </a>

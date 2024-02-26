@@ -20,7 +20,7 @@ export default function NavMobile() {
           </a>
         </li>
         <li>
-          <a className="text-2xl uppercase font-primary" href="#testimonial">
+          <a className="text-2xl uppercase font-primary" href="#artist">
             Artistas
           </a>
         </li>
