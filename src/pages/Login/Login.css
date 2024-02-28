@@ -1,0 +1,26 @@
+.logInBox {
+    color: #a4a4a4; /* Color del título */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px; /* Cambié el ancho para que se ajuste mejor al contenido */
+    padding: 40px; /* Añadí padding para separar el contenido del borde */
+    margin-top: 30%; /* Centra verticalmente */
+    margin-bottom: auto; /* Centra verticalmente */
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}

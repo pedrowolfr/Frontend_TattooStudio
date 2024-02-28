@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Nav() {
   return (
     <nav>
@@ -49,6 +51,14 @@ export default function Nav() {
           >
             Contacto
           </a>
+        </li>
+        <li>
+          <Link
+            className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
+            to="/login"
+          >
+            Login
+          </Link>
         </li>
       </ul>
     </nav>

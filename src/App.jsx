@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import GallerySection from './components/GallerySection'
-import Artist from './components/Artist'
 import Skills from './components/Skills'
 //import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
@@ -17,9 +16,8 @@ export function App() {
         <Hero />
         <About />
         <GallerySection />
-        <Artist />
         <Skills />
-        
+        {/*<Testimonial />*/}
         <Contact />
         <Footer />
       </div>

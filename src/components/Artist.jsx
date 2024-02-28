@@ -42,7 +42,7 @@ const Artist = () => {
               height="667"
             />
             <div>
-              <h4 className="text-2xl">Jonathan Doe</h4>
+              <h4 className="text-2xl">Jonathan Gun</h4>
               <span className="block text-sm text-gray-500">
                 Tattoo Artist
               </span>
@@ -58,7 +58,7 @@ const Artist = () => {
               height="667"
             />
             <div>
-              <h4 className="text-2xl">Anabelle Doe</h4>
+              <h4 className="text-2xl">Anabelle Bom</h4>
               <span className="block text-sm text-gray-500">
                 Piercing Artist
               </span>
