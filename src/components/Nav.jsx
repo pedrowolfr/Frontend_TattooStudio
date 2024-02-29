@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 
 export default function Nav() {
   return (
@@ -53,12 +53,12 @@ export default function Nav() {
           </a>
         </li>
         <li>
-          <Link
+          <a
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            to="/login"
+            href="#login"
           >
             Login
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

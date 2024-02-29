@@ -1,12 +1,16 @@
 import { ToastContainer } from 'react-toastify'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Artist from './components/Artist'
 import About from './components/About'
 import GallerySection from './components/GallerySection'
 import Skills from './components/Skills'
 //import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import React from 'react';
+
+
 
 export function App() {
   return (
@@ -16,6 +20,7 @@ export function App() {
         <Hero />
         <About />
         <GallerySection />
+        <Artist />
         <Skills />
         {/*<Testimonial />*/}
         <Contact />
@@ -36,3 +41,6 @@ export function App() {
     </>
   )
 }
+
+
+
