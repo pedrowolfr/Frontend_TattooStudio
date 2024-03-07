@@ -74,13 +74,13 @@ export const Profile = () => {
                           Nombre:{" "}
                           {editMode ? (
                             <Form.Control
-                              type="text"
-                              name="name"
-                              value={editableData.name}
-                              onChange={inputHandler}
-                            />
+                            type="text"
+                            name="first_name"
+                            value={editableData.first_name || ""}
+                            onChange={inputHandler}
+                          />
                           ) : (
-                            profileData.name
+                            profileData.first_name
                           )}
                         </li>
                         <li className="list-group-item">
@@ -89,7 +89,7 @@ export const Profile = () => {
                             <Form.Control
                               type="text"
                               name="last_name"
-                              value={editableData.last_name}
+                              value={editableData.last_name || ""}
                               onChange={inputHandler}
                             />
                           ) : (
@@ -104,12 +104,12 @@ export const Profile = () => {
                           {editMode ? (
                             <Form.Control
                               type="text"
-                              name="phone_number"
-                              value={editableData.phone_number}
+                              name="phone"
+                              value={editableData.phone || ""}
                               onChange={inputHandler}
                             />
                           ) : (
-                            profileData.phone_number
+                            profileData.phone
                           )}
                         </li>
                       </ul>

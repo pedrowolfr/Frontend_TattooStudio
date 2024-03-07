@@ -26,6 +26,7 @@ export const Appointments = () => {
     }
   }, []);
 
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const inputHandler = (event) => {
