@@ -1,5 +1,5 @@
 import { Header } from "./Components/Header";
-import { Body } from "./Pages/Body";
+import { Body } from "./pages/Body";
 import { Footer } from "./Components/Footer";
 import React from "react";
 import "./index.css";

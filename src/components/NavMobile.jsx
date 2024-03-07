@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useDispatch, useSelector } from "react-redux";
-import { logout, userData } from "../Pages/userSlice";
+import { logout, userData } from "../pages/userSlice";
 
 export default function NavMobile() {
   const dispatch = useDispatch();

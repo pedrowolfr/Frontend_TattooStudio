@@ -2,7 +2,7 @@ import { FaInstagram, FaTwitter, FaUser } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useDispatch, useSelector } from "react-redux";
-import { logout, userData } from "../Pages/userSlice";
+import { logout, userData } from "../pages/userSlice";
 
 export default function Socials() {
   const dispatch = useDispatch();
