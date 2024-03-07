@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { userData } from "./userSlice";
+import { userData } from "../userSlice";
 import {
   DeleteAppointment,
   bringAppointments,
   updateAppointment,
-} from "../Services/apiCalls";
+} from "../../Services/apiCalls";
+import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 
-export const myAppointments = () => {
+export const MisAppointments = () => {
   const userRdxData = useSelector(userData);
   const token = userRdxData.credentials.token;
   const myId = userRdxData.credentials.userData.userId;
@@ -60,16 +61,16 @@ export const myAppointments = () => {
   return (
     <>
       {myAppointments.length > 0 && (
-        <Container className="mt-5">
-          <h3 className="text-center mb-4">Siguiente Sesion</h3>
+        <Container className="body">
+          <h3 className="text-center mb-4">Siguiente Sesión</h3>
           <Row xs={1} md={2} lg={3} className="g-4">
             {myAppointments.map((appointment, index) => (
               <Col key={index}>
                 <Card className="h-100" id="custom-card-profile">
                   <Card.Body>
-                    <Card.Title>Artista: {appointment.artist.name}</Card.Title>
+                    <Card.Title>Artista: {appointment.artist.first_name}</Card.Title>
                     <Card.Text>
-                      <span className="font-weight-bold">Dia:</span>{" "}
+                      <span className="font-weight-bold">Día:</span>{" "}
                       {appointment.editable ? (
                         <Form.Control
                           type="date"

@@ -36,7 +36,7 @@ export const Users = () => {
                 <Card className="shadow-sm appointment-card" id="custom-card">
                   <Card.Body>
                     <Card.Title>
-                      {user.name} {user.last_name}
+                      {user.first_name} {user.last_name}
                     </Card.Title>
                     <Card.Text>{user.email}</Card.Text>
                     <Card.Text>{user.phone}</Card.Text>

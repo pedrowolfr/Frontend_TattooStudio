@@ -77,8 +77,8 @@ export const Register = () => {
               <Form.Control
                 type="text"
                 placeholder="Escribe nombre"
-                name="name"
-                value={signUpData.name}
+                name="first_name"
+                value={signUpData.first_name}
                 onChange={inputHandler}
                 required
               />
@@ -121,8 +121,8 @@ export const Register = () => {
               <Form.Control
                 type="text"
                 placeholder="Telefono"
-                name="phone_number"
-                value={signUpData.phone_number}
+                name="phone"
+                value={signUpData.phone}
                 onChange={inputHandler}
                 required
               />

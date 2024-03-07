@@ -55,7 +55,7 @@ export const AllAppointments = () => {
                         <strong>Hora:</strong> {appointment.time}
                       </p>
                       <p>
-                        <strong>Clientes:</strong> {appointment.user_first_name}{" "}
+                        <strong>Clientes:</strong> {appointment.user_name}{" "}
                         {appointment.user_last_name}
                       </p>
                     </div>

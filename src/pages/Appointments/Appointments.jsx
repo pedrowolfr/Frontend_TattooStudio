@@ -34,7 +34,9 @@ export const Appointments = () => {
       ...prevState,
       [event.target.name]: event.target.value,
     }));
+
   };
+  console.log (event.target.value)
 
   const buttonHandler = () => {
     const token = userRdxData.credentials.token;
@@ -76,7 +78,7 @@ export const Appointments = () => {
                 <option value="">Selecciona Artista</option>
                 {artists.map((artist) => (
                   <option key={artist.id} value={artist.id}>
-                    {artist.name}
+                    {artist.first_name}
                   </option>
                 ))}
               </Form.Control>

@@ -6,12 +6,12 @@ import { Profile } from "./Profile/Profile";
 import { Artists } from "./Artists/Artists";
 import { Appointments } from "./Appointments/Appointments";
 import { Users } from "./Users/Users";
-import { ArtistAppointments } from "./ArtistAppointments/ArtistAppointments";
 import { AllAppointments } from "./AllAppointments/AllAppointments";
 import About from "./About"; 
 import GallerySection from "./GallerySection";
 import Skills from "./Skills"; 
 import Contact from "./Contact";
+// import { MisAppointments } from "./myAppointments";
 
 export const Body = () => {
   return (
@@ -29,7 +29,7 @@ export const Body = () => {
         <Route path="/Contact" element={<Contact />} /> 
         <Route path="/Appointments" element={<Appointments />} />
         <Route path="/Users" element={<Users />} />
-        <Route path="/myappointments" element={<ArtistAppointments />} />
+        {/* <Route path="/myappointments" element={<MisAppointments />} /> */}
         <Route path="/allappointments" element={<AllAppointments />} />
       </Routes>
     </>
