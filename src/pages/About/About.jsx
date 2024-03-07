@@ -1,6 +1,6 @@
-import { aboutData } from "../data";
+import { aboutData } from "../../data";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../../variants";
 
 export default function About() {
   const { title, subtitle1, subtitle2 } = aboutData;
@@ -8,10 +8,7 @@ export default function About() {
   return (
     <section id="about" className="lg:py-16 xl:pb-[160px]">
       <div className="container mx-auto">
-        <div
-          
-          className="flex flex-col lg:flex-row gap-x-[70px] items-center"
-        >
+        <div className="flex flex-col lg:flex-row gap-x-[70px] items-center">
           {/* number */}
           <motion.div
             className="flex flex-col flex-1 lg:flex-row"

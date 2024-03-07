@@ -1,21 +1,12 @@
-#custom-card {
+#custom-card-profile {
   background-color: rgba(16, 16, 16, 0.945);
   color: #a4a4a4;
   border-radius: 4%;
-  margin: 15px auto;
-  width: 30%;
+  margin: 5px auto;
+  width: 40%;
 }
 
-.body-appointments {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  width: 100%;
-  height: 150vh;
-}
-
-.title-appointments {
+.title-miappointments {
   color: #dadada;
   display: flex;
   flex-direction: column;

@@ -1,13 +1,16 @@
-import { galleryData } from "../data";
+import { galleryData } from "../../data";
 import { PhotoAlbum } from "react-photo-album";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../../variants";
 
 export default function GallerySection() {
   const { title, images } = galleryData;
 
   return (
-    <div id="GallerySection" className="relative bg-[#f9f9f9] section mt-[40px]">
+    <div
+      id="GallerySection"
+      className="relative bg-[#f9f9f9] section mt-[40px]"
+    >
       {/* title */}
       <motion.div
         className="container mx-auto"

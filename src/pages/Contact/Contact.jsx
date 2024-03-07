@@ -1,11 +1,11 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { contactData } from "../data";
+import { contactData } from "../../data";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import { fadeIn } from "../../variants";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const { title, info, form } = contactData;

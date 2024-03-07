@@ -44,9 +44,7 @@ export default function Socials() {
           ) : decoded.userRoles === "artist" ? (
             <>
               <NavDropdown.Item href="profile">Perfil</NavDropdown.Item>
-              <NavDropdown.Item href="myappointments">
-                Mis Citas
-              </NavDropdown.Item>
+              <NavDropdown.Item href="myappointments">Citas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/" onClick={() => logMeOut()}>
                 Salir
@@ -55,8 +53,9 @@ export default function Socials() {
           ) : (
             <>
               <NavDropdown.Item href="profile">Perfil</NavDropdown.Item>
-              <NavDropdown.Item href="appointments">
-                Agendar una cita
+              <NavDropdown.Item href="appointments">Agendar</NavDropdown.Item>
+              <NavDropdown.Item href="myAppointments">
+                Mis Citas
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/" onClick={() => logMeOut()}>

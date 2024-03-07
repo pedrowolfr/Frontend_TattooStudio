@@ -7,11 +7,11 @@ import { Artists } from "./Artists/Artists";
 import { Appointments } from "./Appointments/Appointments";
 import { Users } from "./Users/Users";
 import { AllAppointments } from "./AllAppointments/AllAppointments";
-import About from "./About"; 
-import GallerySection from "./GallerySection";
-import Skills from "./Skills"; 
-import Contact from "./Contact";
-// import { MisAppointments } from "./myAppointments";
+import { MyAppointments } from "./MyAppointments/MyAppointments";
+import About from "./About/About";
+import GallerySection from "./GallerySection/GallerySection";
+import Skills from "./Skills/Skills";
+import Contact from "./Contact/Contact";
 
 export const Body = () => {
   return (
@@ -23,13 +23,13 @@ export const Body = () => {
         <Route path="/Login" element={<Login />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Artists" element={<Artists />} />
-        <Route path="/About" element={<About />} /> 
-        <Route path="/GallerySection" element={<GallerySection />} /> 
-        <Route path="/Skills" element={<Skills />} /> 
-        <Route path="/Contact" element={<Contact />} /> 
+        <Route path="/About" element={<About />} />
+        <Route path="/GallerySection" element={<GallerySection />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/Appointments" element={<Appointments />} />
         <Route path="/Users" element={<Users />} />
-        {/* <Route path="/myappointments" element={<MisAppointments />} /> */}
+        <Route path="/myAppointments" element={<MyAppointments />} />
         <Route path="/allappointments" element={<AllAppointments />} />
       </Routes>
     </>

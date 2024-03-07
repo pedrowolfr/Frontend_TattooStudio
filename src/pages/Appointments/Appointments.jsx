@@ -34,9 +34,8 @@ export const Appointments = () => {
       ...prevState,
       [event.target.name]: event.target.value,
     }));
-
   };
-  console.log (event.target.value)
+  console.log(event.target.value);
 
   const buttonHandler = () => {
     const token = userRdxData.credentials.token;

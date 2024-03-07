@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { CircularProgressbar } from "react-circular-progressbar";
-import 'react-circular-progressbar/dist/styles.css'
+import "react-circular-progressbar/dist/styles.css";
 
 export default function Skills() {
   const { ref, inView } = useInView({

@@ -1,9 +1,9 @@
 import { headerData } from "../data";
 import { useEffect, useState } from "react";
 import { TiThMenuOutline } from "react-icons/ti";
-import Nav from "./Nav";
-import NavMobile from "./NavMobile";
-import Socials from "./Socials";
+import Nav from "../Components/Nav";
+import NavMobile from "../Components/NavMobile";
+import Socials from "../Components/Socials";
 
 export const Header = () => {
   const { logo } = headerData;

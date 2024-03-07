@@ -74,11 +74,11 @@ export const Profile = () => {
                           Nombre:{" "}
                           {editMode ? (
                             <Form.Control
-                            type="text"
-                            name="first_name"
-                            value={editableData.first_name || ""}
-                            onChange={inputHandler}
-                          />
+                              type="text"
+                              name="first_name"
+                              value={editableData.first_name || ""}
+                              onChange={inputHandler}
+                            />
                           ) : (
                             profileData.first_name
                           )}

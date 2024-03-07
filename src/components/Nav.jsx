@@ -21,16 +21,16 @@ export default function Nav() {
             Artists
           </Link>
         </li>
-         <li>
-         <Link
+        <li>
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
             to="/about"
           >
             Nosotros
-            </Link>
+          </Link>
         </li>
         <li>
-         <Link
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
             to="/GallerySection"
           >
@@ -38,7 +38,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-         <Link
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
             to="/Skills"
           >
@@ -46,7 +46,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-         <Link
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
             to="/contact"
           >

@@ -27,31 +27,31 @@ export default function NavMobile() {
           </Link>
         </li>
         <li>
-        <Link
-            className="text-2xl uppercase font-primary"
-            to="/artists"
-          >
+          <Link className="text-2xl uppercase font-primary" to="/artists">
             Artists
           </Link>
         </li>
         <li>
           <Link className="text-2xl uppercase font-primary" to="/about">
-          Nosotros
+            Nosotros
           </Link>
         </li>
         <li>
-          <Link className="text-2xl uppercase font-primary" to="/GallerySection">
-          Galería
+          <Link
+            className="text-2xl uppercase font-primary"
+            to="/GallerySection"
+          >
+            Galería
           </Link>
         </li>
         <li>
           <Link className="text-2xl uppercase font-primary" to="/Skills">
-          Habilidades
+            Habilidades
           </Link>
         </li>
         <li>
           <Link className="text-2xl uppercase font-primary" to="/contact">
-          Contacto
+            Contacto
           </Link>
         </li>
         <NavDropdown
