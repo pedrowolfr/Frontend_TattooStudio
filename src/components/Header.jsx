@@ -1,16 +1,13 @@
-import { useEffect, useState } from "react";
 import { headerData } from "../data";
+import { useEffect, useState } from "react";
+import { TiThMenuOutline } from "react-icons/ti";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
-import { TiThMenuOutline } from "react-icons/ti";
 
-export default function Header() {
-  // logo
+export const Header = () => {
   const { logo } = headerData;
-  // estado del header
   const [isActive, setIsActive] = useState(false);
-  // estado para movil
   const [mobileNav, setMobileNav] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -63,4 +60,4 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};

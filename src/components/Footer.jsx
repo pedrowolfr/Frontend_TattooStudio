@@ -3,9 +3,8 @@ import { footerData } from "../data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const Footer = () => {
+export const Footer = () => {
   const { about } = footerData;
-
   return (
     <footer className="section bg-dark">
       <div className="container mx-auto">

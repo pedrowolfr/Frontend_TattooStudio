@@ -1,64 +1,57 @@
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <nav>
       <ul className="flex gap-x-[38px]">
         <li>
-          <a
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#home"
+            to="/"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#about"
+            to="/artists"
+          >
+            Artists
+          </Link>
+        </li>
+         <li>
+         <Link
+            className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
+            to="/about"
           >
             Nosotros
-          </a>
+            </Link>
         </li>
         <li>
-          <a
+         <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#galery"
+            to="/GallerySection"
           >
             Galería
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+         <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#artist"
+            to="/Skills"
           >
-            Artistas
-          </a>
+            Habilidades
+          </Link>
         </li>
         <li>
-          <a
+         <Link
             className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#special"
-          >
-            Especialidades
-          </a>
-        </li>
-        <li>
-          <a
-            className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#contact"
+            to="/contact"
           >
             Contacto
-          </a>
-        </li>
-        <li>
-          <a
-            className="transition duration-300 link hover:border-b-[3px] hover:border-dark"
-            href="#login"
-          >
-            Login
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

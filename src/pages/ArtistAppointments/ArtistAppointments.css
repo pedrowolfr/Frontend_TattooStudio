@@ -1,0 +1,21 @@
+.body-artistapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .title-artistapp {
+    color: #a7a7a7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    height: 50%;
+    font-size: 60px;
+    margin-top: 70px;
+  }
+  
